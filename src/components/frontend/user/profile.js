@@ -12,7 +12,7 @@ const Profile = ({ email }) => {
     setIsLoading(true);
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/users/singleUserBalance/${email}`);
+        const response = await axios.get(`https://wicked-fox-baseball-cap.cyclic.app/api/users/singleUserBalance/${email}`);
         setUser(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -54,7 +54,7 @@ const Profile = ({ email }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/users/getUserBalanceData/${email}`);
+      const response = await axios.get(`https://wicked-fox-baseball-cap.cyclic.app/api/users/getUserBalanceData/${email}`);
       setData(response.data);
       setIsLoadingReport(false);
     } catch (error) {

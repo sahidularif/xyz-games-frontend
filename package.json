@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "proxy": "https://wicked-fox-baseball-cap.cyclic.app",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
